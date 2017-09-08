@@ -17,7 +17,7 @@ setup(
     url="http://github.com/amplio-digital-software/mws",
     description=short_description,
     long_description=long_description,
-    packages=['ampliomws'],
+    packages=['mws'],
     install_requires=[
         'requests',
     ],
