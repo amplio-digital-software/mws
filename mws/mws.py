@@ -440,6 +440,13 @@ class Finances(MWS):
                     )
         return self.make_request(data)
 
+    def list_financial_event_groups_by_next_token(self, token):
+        """Returns a list of financial event groups"""
+        data = dict(Action='ListFinancialEventGroupsByNextToken',
+                    NextToken=token
+                    )
+        return self.make_request(data)
+
     def list_financial_events(
         self,
         financial_event_group_id=None,
@@ -457,6 +464,15 @@ class Finances(MWS):
                     PostedAfter=posted_after,
                     PostedBefore=posted_before,
                     MaxResultsPerPage=max_results,
+                    )
+        return self.make_request(data)
+
+    def list_financial_events_by_next_token(self, token):
+        """ Returns financial events for a user-provided FinancialEventGroupId
+            or AmazonOrderId
+        """
+        data = dict(Action='ListFinancialEventsByNextToken',
+                    NextToken=token
                     )
         return self.make_request(data)
 
