@@ -10,11 +10,11 @@ except (ImportError, OSError):  # either pypandoc or pandoc isn't installed
     long_description = "See README.md"
 
 setup(
-    name='mws',
-    version='0.7.3',
-    maintainer="James Hiew",
-    maintainer_email="james@hiew.net",
-    url="http://github.com/jameshiew/mws",
+    name='ampliomws',
+    version='0.7.4',
+    maintainer="Josh Dwernychuk",
+    maintainer_email="josh@ampliodigital.com",
+    url="http://github.com/amplio-digital-software/mws",
     description=short_description,
     long_description=long_description,
     packages=['mws'],
